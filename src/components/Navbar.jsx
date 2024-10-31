@@ -4,16 +4,16 @@ import { NavLink } from 'react-router-dom';
 function Navbar() {
   return (
     <nav className="w-full fixed top-0 z-10 p-4 flex justify-center items-center bg-transparent">
-      <ul className="flex space-x-10" style={{ marginTop: '10px' }}> {/* Adjusts the navbar positioning */}
+      <ul className="flex flex-wrap justify-center space-x-4 sm:space-x-10 mt-2">
         <li>
           <NavLink 
             to="/" 
             className={({ isActive }) => 
               `uppercase transition duration-300 ${isActive ? 'text-white font-semibold' : 'text-gray-100'} hover:text-gray-800`
             }
-            style={{ letterSpacing: '0.05em', fontSize: '0.8em' }}
+            style={{ letterSpacing: '0.08em', fontSize: '0.8em' }}
           >
-            H O M E
+            HOME
           </NavLink>
         </li>
         <li>
@@ -22,9 +22,9 @@ function Navbar() {
             className={({ isActive }) => 
               `uppercase transition duration-300 ${isActive ? 'text-white font-semibold' : 'text-gray-100'} hover:text-gray-800`
             }
-            style={{ letterSpacing: '0.05em', fontSize: '0.8em' }}
+            style={{ letterSpacing: '0.08em', fontSize: '0.8em' }}
           >
-            P R O J E C T S
+            PROJECTS
           </NavLink>
         </li>
         <li>
@@ -33,9 +33,9 @@ function Navbar() {
             className={({ isActive }) => 
               `uppercase transition duration-300 ${isActive ? 'text-white font-semibold' : 'text-gray-100'} hover:text-gray-800`
             }
-            style={{ letterSpacing: '0.05em', fontSize: '0.8em' }}
+            style={{ letterSpacing: '0.08em', fontSize: '0.8em' }}
           >
-            A B O U T
+            ABOUT
           </NavLink>
         </li>
         <li>
@@ -44,9 +44,9 @@ function Navbar() {
             className={({ isActive }) => 
               `uppercase transition duration-300 ${isActive ? 'text-white font-semibold' : 'text-gray-100'} hover:text-gray-800`
             }
-            style={{ letterSpacing: '0.05em', fontSize: '0.8em' }}
+            style={{ letterSpacing: '0.08em', fontSize: '0.8em' }}
           >
-            C O N T A C T
+            CONTACT
           </NavLink>
         </li>
       </ul>
